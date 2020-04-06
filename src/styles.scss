@@ -49,15 +49,16 @@ $custom-purple: (
     )
 );
 
+// **** COLORS **** //
 // $fireboard-primary: mat-palette($mat-indigo);
 $fireboard-primary: mat-palette($custom-purple);
 $fireboard-accent: mat-palette($mat-pink, A200, A100, A400);
-
 // The warn palette is optional (defaults to red).
 $fireboard-warn: mat-palette($mat-red);
 
 // Create the theme object (a Sass map containing all of the palettes).
-$fireboard-theme: mat-light-theme($fireboard-primary, $fireboard-accent, $fireboard-warn);
+// $fireboard-theme: mat-light-theme($fireboard-primary, $fireboard-accent, $fireboard-warn);
+$fireboard-theme: mat-dark-theme($fireboard-primary, $fireboard-accent, $fireboard-warn);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
