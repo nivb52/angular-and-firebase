@@ -1,7 +1,8 @@
+require('dotenv').config()
 export const environment = {
   production: true,
   firebaseConfig : {
-    apiKey: "AIzaSyBuheYM6JUxrUrA5RrBFJg5bfChyryqqjQ",
+    apiKey: process.env.firebaseApiKey,
     authDomain: "ng-trello-e35eb.firebaseapp.com",
     databaseURL: "https://ng-trello-e35eb.firebaseio.com",
     projectId: "ng-trello-e35eb",

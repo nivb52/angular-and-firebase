@@ -1,11 +1,11 @@
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
-
+require('dotenv').config()
 export const environment = {
   production: false,
   firebaseConfig : {
-    apiKey: "AIzaSyBuheYM6JUxrUrA5RrBFJg5bfChyryqqjQ",
+    apiKey: process.env.firebaseApiKey,
     authDomain: "ng-trello-e35eb.firebaseapp.com",
     databaseURL: "https://ng-trello-e35eb.firebaseio.com",
     projectId: "ng-trello-e35eb",
